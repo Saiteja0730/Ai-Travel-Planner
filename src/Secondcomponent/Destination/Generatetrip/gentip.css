@@ -1,0 +1,18 @@
+
+.gentrip-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gentrip-container h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+  }
+  
+  .gentrip-container p {
+    color: red;
+    font-size: 1.2rem;
+  }
+  .Gentrip-box{
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+  }

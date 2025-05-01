@@ -1,0 +1,77 @@
+/* thingstodo.css */
+.things-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin-top: 50vh;
+    margin-left: 5vw;
+  }
+  
+  .activity-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .activity-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .activity-info {
+    padding: 1.2rem;
+  }
+  
+  .activity-info h3 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .activity-info p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .activity-info strong {
+    font-weight: 600;
+    color: #333;
+    /* background-color: red; */
+    max-width: 4vh;
+  }
+  
+  @media (max-width: 768px) {
+    .things-container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    
+    .activity-image {
+      height: 160px;
+    }
+    
+    .activity-info {
+      padding: 1rem;
+    }
+    
+    .activity-info h3 {
+      font-size: 1.2rem;
+    }
+  }

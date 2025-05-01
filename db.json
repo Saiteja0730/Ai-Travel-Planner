@@ -1,0 +1,35 @@
+{
+    "Mydashboard": [
+      {
+        "id":"1",
+        "image": "https://images.pexels.com/photos/586687/pexels-photo-586687.jpeg?auto=compress&cs=tinysrgb&w=500",
+        "caption": "The earth has music for those who listen"
+      },
+      {
+        "id":"2",
+        "image": "https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Not all those who wander are lost"
+      },
+      {
+        "id":"3",
+        "image": "https://images.pexels.com/photos/1486577/pexels-photo-1486577.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "To travel is to live"
+      },
+      {
+        "id":"4",
+        "image": "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Adventure is worthwhile"
+      },
+      {
+        "id":"5",
+        "image": "https://images.pexels.com/photos/1707310/pexels-photo-1707310.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Have a safe trip and come back with great stories!"
+      },
+      {
+        "id":"6",
+        "image": "https://images.pexels.com/photos/2108813/pexels-photo-2108813.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Enjoy your journey"
+      }
+    ]
+  }
+  

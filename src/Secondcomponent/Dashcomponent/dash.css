@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    width: 100%;
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navBar {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  
+  .logoDiv {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .logoDiv .icon {
+    height: 40px;
+    width: 40px;
+    color: #0b55e9;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav-list-container {
+    display: flex;
+    justify-content:flex-start; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list {
+    margin-left: 10px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: #2e17ff;
+    font-weight: 900px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; 
+    padding-right: 50px;
+  }
+  
+  .nav-list:hover {
+    color: #df1010;
+    text-decoration: underline;
+  }
+  
+  
+  .signDiv{
+    border-radius: 8px 1px;
+    background-color: blue;
+  }
+  .signout{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fef8f8;
+    transition: color 0.1s ease, transform 0.1s ease;
+  }
+  .signout:hover {
+    color: #ec0f21; 
+  }
+  
+  
+  /* Responsive (Mobile) */
+  @media screen and (max-width: 768px) {
+    .menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: white;
+      width: 200px;
+      padding: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: none; /* Change to flex to show */
+    }
+  
+    .menu .icon {
+      display: block;
+    }
+  
+    .navBar > .icon {
+      display: block;
+    }
+  
+    .menu.active ul {
+      display: flex;
+    }
+  
+    .signUpBtn {
+      display: none;
+    }
+  }
+/* Video css */
+.homevideo {
+  position: fixed;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sectionText {
+  position: relative; 
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sectionText h1 {
+  font-size: 3.9rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sectionText p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.btnGet{
+  border-radius: 10px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  color: white;
+  background-color: rgb(23, 23, 245);
+}
+
+.imageplaces{
+  display: flex;
+  align-items: center;
+  margin-left: 22vw;
+  height: 10%;
+  width: 10%;
+  gap: 3rem;
+}
+
+.image2{
+  border-radius: 10%;
+  width: 70vh;
+  height: 150px;
+}
+.image3{
+  border-radius: 10%;
+  width: 70vh;
+  height: 150px; 
+}
+.image4{
+  border-radius: 10%;
+  width: 70vh;
+  height: 150px; 
+}
+
+/* This is  the search css */
+
+.searchbody {
+  position: relative;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 95vw;
+}
+
+/* locationbody */
+.locationbody{
+  margin-left: 30px;
+}
+.locationtext {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #4b5563; 
+  margin-bottom: 0.25rem;
+}
+
+.locationinput {
+  position: relative;
+}
+
+.inputtext {
+  width: 100%;
+  border: 1px solid #d1d5db; 
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.inputtext:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+
+.suggestions-dropdown {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-top: none;
+  border-radius: 0 0 0.75rem 0.75rem;
+  margin-top: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestion-item.active {
+  background-color: #dbeafe; /* blue-100 */
+}
+/* this is guest body */
+.guest-display {
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: black;
+}
+
+
+/* this is checkin-out body */
+.checkbody{
+  margin-top: 15px;
+}
+.checktext{
+  color: #4b5563;
+  font-weight: 600;
+}
+
+/* Guest body */
+.guestbody{
+  margin-top: 14px;
+}
+.guesttext{
+  color: #4b5563;
+  font-weight: 600;
+}
+.searchtext{
+  margin-top: 10px;
+  height: 50px;
+  font-size: 20px;
+}
+.guestindex{
+  position: absolute;
+  max-width: 15vw;
+  z-index: 10;
+}
+.locationindex{
+  position: absolute;
+  max-width: 15vw;
+  z-index: 1;
+}
+.searchtext{
+  margin: 45px 30px 0px 0px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  height: 40px;
+  width: 30vh;
+}
+
+/* This is the Trust Card section CSS */
+.trustbody {
+  padding: 60px 20px;
+  /* background-color: #f9fafb; */
+}
+
+
+.trustelement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each card */
+.trustelement > div {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.trustelement > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.trustelement img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Title text */
+.trustelement h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.trustelement p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* This is the Caurosal css */
+.main_heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.caroicon{
+  font-weight: 900;
+  background-color: rgb(9, 228, 100);
+}
+.slidepara{
+  display: flex;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #e90b98;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* This is scroll button css */
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    padding-right: 35px;
+    border-radius: 6px;
+    max-width: 20px;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #2b0acf;
+  }
+  .scroll-to-top-btn i {
+   display: flex;
+   position: relative;
+    font-size: 34px;
+    z-index: 1;
+  }
+

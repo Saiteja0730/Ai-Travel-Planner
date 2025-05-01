@@ -1,0 +1,101 @@
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  margin-top: 15rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 52vh;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.card-content p {
+  margin: 0.25rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.card-content .offer {
+  color: #16a34a;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 160px; 
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.book-me {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.book-me button {
+  background: rgba(255, 255, 255, 0.2); /* transparent white background */
+  color: #fff;
+  border: 1px solid #fff; /* add a white border */
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1rem;
+  backdrop-filter: blur(5px); /* frosted glass effect */
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.book-me button:hover {
+  background: rgba(255, 255, 255, 0.3); /* slightly more visible on hover */
+  border: 1px solid #fff;
+}
+
+
+.image-container:hover .book-me {
+  opacity: 1;
+}

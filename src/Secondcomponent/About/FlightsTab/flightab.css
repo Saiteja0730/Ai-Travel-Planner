@@ -1,0 +1,76 @@
+.flight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin-top: 50vh;
+    margin-left: 5vw;
+  }
+  
+  .flight-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .flight-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .flight-info {
+    padding: 1.2rem;
+  }
+  
+  .flight-info h3 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .flight-info p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .flight-info strong {
+    font-weight: 600;
+    color: #333;
+    max-width: 4vh;
+  }
+  
+  @media (max-width: 768px) {
+    .flight-container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .flight-image {
+      height: 160px;
+    }
+  
+    .flight-info {
+      padding: 1rem;
+    }
+  
+    .flight-info h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,52 @@
+
+.budtravel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    /* background-color: black; */
+    max-width: 70%;
+    margin-left: 10%;
+}
+.budtravel-card {
+    background-color: #a0dded;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-left: 30px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .budtravel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .budtravel-card.selected {
+    border-color: rgb(31, 16, 238);
+  }
+  
+  .budtravel-card img {
+    height: 30px;
+    /* margin-left: 4vw; */
+    color: #0d6efd;
+    max-width: 40px;
+  }
+  
+  .budtravel-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 8px;
+  }
+  
+  .budtravel-desc {
+    font-size: 0.9rem;
+    color: #36383a;
+  }

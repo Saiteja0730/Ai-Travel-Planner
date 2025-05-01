@@ -1,0 +1,123 @@
+.travel-container {
+  padding: 40px 24px;
+}
+
+.travel-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.travel-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.travel-header p {
+  color: #6c757d;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+@media (min-width: 768px) {
+  .travel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .travel-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.travel-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.travel-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.travel-card:hover img {
+  transform: scale(1.1);
+}
+
+.travel-card-body {
+  padding: 12px;
+}
+
+.travel-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.travel-card-description {
+  font-size: 0.7rem;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+.travel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.travel-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 3px; */
+  /* margin-right: 60px; */
+  color: #fcbf49;
+}
+
+.star-icon {
+  font-size: 1px;
+  width: 46px;
+  height: 26px;
+  color: rgb(210, 181, 17);
+}
+.rating-value{
+  font-weight: bold;
+  max-width: 28px;
+}
+.travel-reviews{
+  color: black;
+}
+.travel-price{
+  color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  max-width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+

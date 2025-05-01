@@ -1,0 +1,266 @@
+.booking-bar {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px 14px rgba(21, 20, 20, 0.1);
+    margin-top: -35vh;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 70%;
+    max-width: 77vw;
+    margin-left: 11vw;
+    height: 9vh;
+  }
+  
+  .booking-item {
+    padding: 10px 15px;
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    max-width: 19vw;
+    width: 15%;
+  }
+  
+  .booking-item:last-child {
+    border-right: none;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    color: #6c757d;
+    height: 4vh;
+    cursor: pointer;
+    max-width: 3vw;
+  }
+  
+  .location-input {
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    flex-grow: 1;
+    max-width: 15vw;
+    height: 35px;
+    background-color: #fff;
+    color: black;
+  }
+  
+  .location-input:focus {
+    outline: none;
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #343a40;
+    white-space: nowrap;
+    width: 70%;
+  }
+  
+  .update-button {
+    background-color: #3f14fd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+  
+  .update-button:hover {
+    background-color: #e06c0b;
+  }
+  
+  .calendar-popup,
+  .guests-popup {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  /* Style for the calendar popup - Side by side */
+  .calendar-popup {
+    display: flex;
+    max-width: 45vw;
+    margin-left: 25vw;
+    position: absolute
+  }
+  
+  .calendar-column {
+    margin-right: 20px; 
+  }
+  
+  .calendar-column:last-child {
+    margin-right: 0;
+  }
+  
+  .calendar-column h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #343a40;
+    text-align: center;
+  }
+  
+  .react-datepicker-wrapper {
+    display: inline-block; 
+  }
+  
+  .react-datepicker {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .react-datepicker__header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__current-month {
+    font-size: 0.9rem;
+  }
+  
+  .react-datepicker__day--selected,
+  .react-datepicker__day--highlighted-calendar,
+  .react-datepicker__day--today {
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 5px;
+  }
+  
+  /* Style for the guests popup - No change needed for layout */
+  .guests-popup {
+    display: flex;
+    flex-direction: column;
+    width: 32vw;
+    margin-left: 45vw;
+    position: absolute;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  
+  .guest-rooms-scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .guest-rooms-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .guest-rooms-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  
+  .add-room:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .guests-popup h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #343a40;
+    max-width: 6vw
+  }
+  
+  .guest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .guest-item p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #343a40;
+    max-width: 13vw;
+  }
+  
+  .guest-item small {
+    color: #6c757d;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    max-width: 10vw;
+    margin-right: 0vw;
+  }
+  
+  .counter button {
+    background: none;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .counter button:hover {
+    background-color: #e9ecef;
+  }
+  
+  .counter span {
+    font-size: 1rem;
+    margin: 0 10px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .room-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .room-actions button {
+    background: none;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    max-width: 15vw;
+  }
+  
+  .room-actions .add-room:hover,
+  .room-actions .remove-room:hover {
+    background-color: #e7f3ff;
+  }
+  
+  .remove-room {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .remove-room:hover {
+    background-color: #f8d7da;
+  }
+
+  .calendar-popup,
+  .guests-popup {
+    position: absolute;
+    z-index: 9999;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+  }

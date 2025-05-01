@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    /* background-color: #fff; */
+  }
+  
+  .Logo {
+    background-image: url(./login_image.png);
+    }
+  
+  .parent-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center; 
+  }  
+  
+  .loginimage{
+    display: flex;
+    width: 81%;
+    height: 100%;
+    margin: 0px;
+    padding: 10px;    
+  }
+
+  /* login css */
+  .loginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginform {
+    border: 1px solid red;
+    padding: 30px;
+    width: 90vh;
+    color: rgb(64, 64, 238);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginemail {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Utility spacing */
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Row and column layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Remember me */
+/* Inline checkbox and label */
+.form-check-label-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10vh;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.forgot-password{
+  font-size: 16px;
+}
+/* Checkbox size */
+.form-check-input-inline {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #007bff; 
+}
+
+/* Social login icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Social buttons */
+.btn-social {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.btn-social:hover {
+  color: #007bff;
+}
+
