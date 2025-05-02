@@ -24,34 +24,199 @@
   .limited-offer h3{
     font-size: 1.5rem;
   }
-  .price-summary {
-    padding: 1rem;
-    border-top: 1px solid #ccc;
+  .booking-details {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
   }
-  
-  .price-summary p {
+
+  .booking-details-header {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 0;
-    font-size: 16px;
+    transition: all 0.3s ease;
   }
-  
-  .price-summary span {
-    font-size: 16px;
+
+  .booking-details-header:hover {
+    background: #f0f2f5;
   }
-  
-  .price-summary > span {
+
+  .booking-details-header h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .booking-details-header span {
+    color: #7f8c8d;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .booking-details-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 1rem;
+  }
+
+  .booking-details.open .booking-details-content {
+    max-height: 500px; /* Adjust based on content height */
+  }
+
+  .booking-details.open .booking-details-header span {
+    transform: rotate(180deg);
+  }
+
+  .detail-item {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
-    margin-top: 1rem;
-    font-size: 18px;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
   }
-  .total-row {
+
+  .detail-item:last-child {
+    border-bottom: none;
+  }
+
+  .detail-item:hover {
+    background: #f8f9fa;
+  }
+
+  .detail-item span:first-child {
+    color: #7f8c8d;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .detail-item span:last-child {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .price-summary {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+
+  .price-summary-header {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
-    font-size: 18px;
+    align-items: center;
+    transition: all 0.3s ease;
   }
-    
+
+  .price-summary-header:hover {
+    background: #f0f2f5;
+  }
+
+  .price-summary-header h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .price-summary-header span {
+    color: #7f8c8d;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .price-summary-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 1rem;
+  }
+
+  .price-summary.open .price-summary-content {
+    max-height: 500px; /* Adjust based on content height */
+  }
+
+  .price-summary.open .price-summary-header span {
+    transform: rotate(180deg);
+  }
+
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
+  }
+
+  .price-item:last-child {
+    border-bottom: none;
+  }
+
+  .price-item:hover {
+    background: #f8f9fa;
+  }
+
+  .price-item span:first-child {
+    color: #7f8c8d;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .price-item span:last-child {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .price-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-top: 2px solid #e0e0e0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .continue-payment {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .continue-payment button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .continue-payment button:hover {
+    background-color: #0085e0;
+  }
+
+  .continue-payment button:active {
+    transform: scale(0.98);
+  }
