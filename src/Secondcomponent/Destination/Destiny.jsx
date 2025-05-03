@@ -4,12 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Budget from "./Budget/budget";
+import Budget from "./Budget/Budget.jsx";
 import Budgettravel from "./Budget_travel/Budgettravel";
 import { ToastContainer, toast } from "react-toastify";
 import { chatSession } from "./AiServices/Aimodel";
 import { doc, setDoc } from "@firebase/firestore";
 import { db } from "../../Firstcomponent/Firebase";
+
 
 // 5GNXDVJsQLybdALC0YNrNnFEjjabhBxrTjwOMdkaNluMg2XHQisNvosm
 
