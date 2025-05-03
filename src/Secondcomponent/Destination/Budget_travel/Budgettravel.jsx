@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Budgettravel.css";
+import "./budgettravel.css";
 
 const Budgettravel = ({ onBudgetTravel }) => {
   const [selected, setSelected] = useState(null);
@@ -62,6 +62,7 @@ const Budgettravel = ({ onBudgetTravel }) => {
             <p className="budtravel-desc">{item.desc}</p>
           </div>
         ))}
+        
       </div>
     </>
   );
